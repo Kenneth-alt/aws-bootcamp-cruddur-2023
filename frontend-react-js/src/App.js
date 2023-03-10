@@ -10,7 +10,6 @@ import MessageGroupsPage from './pages/MessageGroupsPage';
 import MessageGroupPage from './pages/MessageGroupPage';
 import ConfirmationPage from './pages/ConfirmationPage';
 import React from 'react';
-import process from 'process';
 import {
   createBrowserRouter,
   RouterProvider
@@ -18,11 +17,11 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/notifications",
+    path: "/",
     element: <HomeFeedPage />
   },
   {
-    path: "/",
+    path: "/notifications",
     element: <NotificationsFeedPage />
   },
   {
